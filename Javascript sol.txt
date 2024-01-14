@@ -1,0 +1,95 @@
+===============================================Explain the difference between let, const, and var===================================================
+
+var:
+
+Scoping: var is function-scoped. It means that a variable declared with var is visible throughout the entire function, regardless of block scope.
+Reassignment: Variables declared with var can be redeclared and reassigned.
+Hoisting: Variables declared with var are hoisted to the top of their scope during the compilation phase, which means they can be used before the declaration.
+
+
+let:
+
+Scoping: let is block-scoped, meaning it is confined to the block (enclosed by curly braces) where it is defined.
+Reassignment: Variables declared with let can be reassigned, but not redeclared in the same scope.
+Hoisting: Variables declared with let are hoisted to the top of their block, but there is a "temporal dead zone" during which accessing the variable results in a ReferenceError
+
+
+const:
+
+Scoping: const is block-scoped, just like let.
+Reassignment: Variables declared with const cannot be reassigned after initialization. They must be assigned a value when declared, and that value cannot be changed.
+Hoisting: Like let, variables declared with const are hoisted, and they also have a temporal dead zone.
+
+
+=================================closures=============================================
+
+jab ek function kisi aur function ke andar bana hota hai aur wo inner function bahar wale function ke variables ya parameters ko access kar sakta hai, toh use hum closure kehte hain.
+
+// function outer(d){
+        //     let a = 12
+
+        //     function inner(b){
+        //         return a+b
+        //     }
+        //     return inner
+        // }
+
+        // let c = outer()
+
+        // console.log(c(3));
+
+
+
+        function Counter() {
+            let count = 0 
+
+            function increament() {
+
+                count++
+                console.log(count);
+                
+            }
+            return increament
+            
+        }
+
+        let icount =  Counter()
+
+        icount()
+        icount()
+        icount()
+        icount()
+
+
+========================================What is the difference between null and undefined?===================================================================================
+
+Undefined:
+
+Matlab: Ek variable declared hai, lekin usme koi value assign nahi ki gayi hai.
+
+Note: Undefined ek data type bhi hai JavaScript mein.
+
+------------------
+Null:
+
+Matlab: Ek variable intentionally empty ya null (khali) hai.
+
+Note: Null ek specific value hai, jo developer dwara assign ki ja sakti hai, jab koi value nahi hona chahiye
+
+
+===============================================Explain the concept of hoisting.=============================================================================================
+
+
+============================================================================================================================================
+
+============================================================================================================================================
+
+============================================================================================================================================
+
+============================================================================================================================================
+
+============================================================================================================================================
+
+============================================================================================================================================
+
+============================================================================================================================================

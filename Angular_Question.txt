@@ -1,0 +1,299 @@
+Describe the Angular component lifecycle hooks.
+
+How does Angular handle routing in single-page applications?
+
+Differentiate between ngOnChanges and ngOnInit lifecycle hooks.
+
+How can you pass data from parent to child components in Angular?
+
+What are Angular services, and how do they facilitate code reusability?
+
+How can you handle errors in Angular applications?
+
+Feel free to use these questions for self-assessment or interview preparation. If you have any specific questions or need more details on any of them, feel free to ask!
+
+What is the purpose of the @ViewChild decorator in Angular?
+
+Explain the role of the async pipe in Angular.
+
+How can you handle form submissions in Angular, and what is the purpose of ngSubmit?
+
+Differentiate between template-driven forms and reactive forms in Angular.
+
+How does Angular handle security concerns, such as cross-site scripting (XSS)?
+
+What is the Angular ngFor directive, and how is it used in template binding?
+
+Explain the concept of Angular directives and provide examples.
+
+How can you implement lazy loading in Angular?
+
+What is the Angular ngZone, and why is it important?
+
+How does Angular support internationalization (i18n)?
+
+Explain the concept of Angular pipes and provide examples of built-in pipes.
+
+What are Angular guards, and how are they used in routing?
+
+How does Angular optimize performance through change detection?
+
+What is the purpose of the Angular TestBed?
+
+Explain the difference between a module and a component in Angular.
+
+How can you share data between sibling components in Angular?
+
+What are Angular interceptors, and how are they used in HTTP requests?
+
+Explain the role of the Angular Renderer2 service.
+
+How do you deploy an Angular application to production?
+
+What is the purpose of the Angular ngModelOptions directive?
+
+Describe the concept of Angular animations and provide examples.
+
+How does Angular support server-side rendering (SSR)?
+
+What is AOT (Ahead-of-Time) compilation in Angular, and why is it beneficial?
+
+How can you handle route parameters in Angular?
+
+Explain the role of the Angular HttpClient module in making HTTP requests.
+
+What are Angular schematics, and how can they be used in application development?
+
+How does Angular support PWA (Progressive Web App) development?
+
+What is the Angular ng-content directive, and how is it used in component composition?
+
+Explain the purpose of Angular ngZone in change detection.
+
+How do you implement data binding in Angular?
+
+What is the purpose of the Angular ngIf directive?
+
+Explain the concept of Angular dependency injection hierarchy.
+
+How can you handle authentication in an Angular application?
+
+What is the purpose of the Angular TestBed.configureTestingModule method?
+
+
+How do you implement cross-component communication in Angular?
+
+Explain the role of the Angular CLI ng build command.
+
+How can you integrate third-party libraries into an Angular project?
+
+What is the purpose of the Angular async validator?
+
+How does Angular support the creation of custom directives?
+
+Explain the use of the Angular ActivatedRoute service.
+
+What is the Angular ngClass directive, and how is it used in styling?
+
+How can you optimize Angular application performance through lazy loading?
+
+Explain the concept of Angular ngZone.runOutsideAngular method.
+
+What is the purpose of Angular ng-container?
+
+How do you handle errors in Angular HTTP requests?
+
+Explain the concept of Angular content projection.
+
+How can you implement server-side rendering (SSR) in an Angular application?
+
+What is the purpose of the Angular trackBy function in ngFor?
+
+How does Angular support the handling of forms and form validation?
+
+Explain the concept of Angular dependency injection tokens.
+
+How can you use Angular services to share data between components?
+
+What is the Angular ActivatedRouteSnapshot, and how is it used?
+
+How do you handle asynchronous operations in Angular?
+
+Explain the concept of Angular component encapsulation.
+
+What is the Angular ngStyle directive, and how is it used in styling?
+
+How does Angular support the development of reactive programming?
+
+What is the Angular ngZone.run method, and when is it useful?
+
+Explain the concept of Angular view encapsulation.
+
+How can you handle route guards in Angular?
+
+What is the purpose of Angular ng-template?
+
+How do you implement server-side rendering (SSR) with Angular Universal?
+
+Explain the role of Angular pipes in transforming data.
+
+What is the Angular ngIfElse directive, and how is it used?
+
+How can you create a custom directive in Angular?
+
+Explain the concept of Angular route resolvers.
+
+What is the purpose of Angular ngModelChange event?
+
+How does Angular support the handling of HTTP interceptors?
+
+What is the Angular Renderer service, and how is it used?
+
+How can you optimize Angular application performance through change detection strategies?
+
+Explain the purpose of the Angular ngZone.onStable event.
+
+What is the Angular HttpClientInterceptor, and how is it implemented?
+
+How can you handle state management in large Angular applications?
+
+What is the Angular AfterViewInit lifecycle hook, and when is it called?
+
+Explain the role of Angular ng-template outlets.
+
+How do you implement reactive forms in Angular, and what are the advantages?
+
+What is the Angular ngClass directive, and how is it used in conditionals?
+
+Explain the concept of Angular template reference variables.
+
+How does Angular support the handling of observables?
+
+What is the Angular ngDoCheck lifecycle hook, and when is it called?
+
+How can you create a custom validator in Angular forms?
+
+What is the purpose of the Angular ng-content select attribute?
+
+Explain the role of Angular elementRef in component development.
+
+How does Angular support the implementation of lazy-loaded modules?
+
+What is the purpose of the Angular ngIfAsync directive?
+
+How can you optimize the performance of Angular applications for SEO?
+
+What are Angular schematics, and how can they be used in application development?
+How does Angular support PWA (Progressive Web App) development?
+What is the Angular ng-content directive, and how is it used in component composition?
+Explain the purpose of Angular ngZone in change detection.
+How do you implement data binding in Angular?
+What is the purpose of the Angular ngIf directive?
+Explain the concept of Angular dependency injection hierarchy.
+How can you handle authentication in an Angular application?
+What is the purpose of the Angular TestBed.configureTestingModule method?
+How do you implement cross-component communication in Angular?
+Explain the role of the Angular CLI ng build command.
+How can you integrate third-party libraries into an Angular project?
+What is the purpose of the Angular async validator?
+How does Angular support the creation of custom directives?
+Explain the use of the Angular ActivatedRoute service.
+What is the Angular ngClass directive, and how is it used in styling?
+How can you optimize Angular application performance through lazy loading?
+Explain the concept of Angular ngZone.runOutsideAngular method.
+What is the purpose of Angular ng-container?
+How do you handle errors in Angular HTTP requests?
+Explain the concept of Angular content projection.
+How can you implement server-side rendering (SSR) in an Angular application?
+What is the purpose of the Angular trackBy function in ngFor?
+How does Angular support the handling of forms and form validation?
+Explain the concept of Angular dependency injection tokens.
+How can you use Angular services to share data between components?
+What is the Angular ActivatedRouteSnapshot, and how is it used?
+How do you handle asynchronous operations in Angular?
+Explain the concept of Angular component encapsulation.
+What is the Angular ngStyle directive, and how is it used in styling?
+How does Angular support the development of reactive programming?
+What is the Angular ngZone.run method, and when is it useful?
+Explain the concept of Angular view encapsulation.
+How can you handle route guards in Angular?
+What is the purpose of Angular ng-template?
+How do you implement server-side rendering (SSR) with Angular Universal?
+Explain the role of Angular pipes in transforming data.
+What is the Angular ngIfElse directive, and how is it used?
+How can you create a custom directive in Angular?
+Explain the concept of Angular route resolvers.
+What is the purpose of Angular ngModelChange event?
+How does Angular support the handling of HTTP interceptors?
+What is the Angular Renderer service, and how is it used?
+How can you optimize Angular application performance through change detection strategies?
+Explain the purpose of the Angular ngZone.onStable event.
+What is the Angular HttpClientInterceptor, and how is it implemented?
+How can you handle state management in large Angular applications?
+What is the Angular AfterViewInit lifecycle hook, and when is it called?
+Explain the role of Angular ng-template outlets.
+How do you implement reactive forms in Angular, and what are the advantages?
+What is the Angular ngClass directive, and how is it used in conditionals?
+Explain the concept of Angular template reference variables.
+How does Angular support the handling of observables?
+What is the Angular ngDoCheck lifecycle hook, and when is it called?
+How can you create a custom validator in Angular forms?
+What is the purpose of the Angular ng-content select attribute?
+Explain the role of Angular elementRef in component development.
+How does Angular support the implementation of lazy-loaded modules?
+What is the purpose of the Angular ngIfAsync directive?
+How can you optimize the performance of Angular applications for SEO?
+Feel free to use these questions for your interview preparation. They cover a wide range of topics related to Angular, and practicing them will help you become more confident in discussing various aspects of Angular development. Good luck with your interview!
+
+
+
+How can you communicate between components in Angular?
+Explain the purpose of the Angular ng-content select attribute.
+What is the Angular NgModule's role in application architecture?
+How does Angular support form validation, and what are Validators?
+What is the Angular ngModel directive, and how is it used in forms?
+How do you handle route parameters in Angular?
+Explain the concept of Angular change detection and its strategies.
+How can you optimize the performance of Angular applications for mobile devices?
+What are Angular directives, and how are they different from components?
+How can you implement a resolver in Angular routing?
+What is the purpose of the Angular ng-template outlets?
+How do you create and use services in Angular?
+Explain the concept of Angular ng-content projection.
+How does Angular support the creation of dynamic components?
+What is the Angular ngSwitch directive, and how is it used?
+How can you handle errors in Angular reactive forms?
+Explain the purpose of Angular platform modules.
+What is Angular's TestBed.createComponent used for?
+How do you implement lazy loading for modules in Angular?
+Explain the concept of Angular attribute directives.
+What is the Angular KeyValuePipe, and how is it used?
+How can you handle HTTP Interceptors in Angular?
+Explain the role of Angular router events.
+What is the purpose of the Angular Renderer2 service?
+How can you achieve component communication in Angular using Input and Output?
+Explain the role of the Angular ViewChildren and ContentChildren decorators.
+How do you structure an Angular application for scalability?
+What is the Angular async pipe, and when is it useful?
+How can you handle data loading and error states in Angular components?
+Explain the purpose of Angular TestBed.override* methods.
+How does Angular support the development of cross-platform applications?
+What is the Angular ng-template structural directive used for?
+How can you implement a custom validator for reactive forms in Angular?
+Explain the concept of Angular Zone.js and its role in change detection.
+How does Angular support accessibility (a11y) in applications?
+What is the Angular ng-container, and when would you use it?
+How do you implement HTTP caching in Angular applications?
+Explain the role of Angular ViewChild and ContentChild decorators.
+What is Angular's trackBy function used for in ngFor?
+How can you handle global error handling in Angular applications?
+Explain the role of Angular animations and the @angular/animations module.
+How do you implement state management in Angular applications?
+What is Angular's ng-content directive, and how does it work?
+How can you handle form validations asynchronously in Angular?
+Explain the purpose of Angular CDK (Component Dev Kit).
+What is Angular's ngModelOptions directive, and how is it used?
+How does Angular support lazy loading for feature modules?
+What is the purpose of Angular's ngZone.runOutsideAngular method?
+How can you optimize Angular application performance using lazy loading?
+Explain the concept of Angular Dependency Injection tokens.
