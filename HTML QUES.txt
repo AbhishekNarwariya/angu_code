@@ -1,0 +1,123 @@
+What is the purpose of the HTML <iframe> element?
+
+How does the localStorage differ from sessionStorage in HTML5?                                                    
+
+How can you create a responsive website using HTML?
+
+What is the HTML5 <canvas> element used for?
+
+What is the purpose of the <aside> element in HTML5?
+
+Explain the concept of accessibility in HTML and how you can enhance it.
+
+What is the purpose of the <figure> and <figcaption> elements in HTML?
+
+Explain the difference between the <em> and <i> tags.
+
+What is the purpose of the HTML <time> element?
+
+How can you disable the right-click context menu in a web page using HTML?
+
+Describe the role of the role attribute in HTML for accessibility.
+
+How do you create a responsive image in HTML?
+
+What is the purpose of the async attribute in the <script> tag?
+
+How can you create a hyperlink without an underline using only HTML?
+
+Explain the purpose of the <ruby> and <rt> tags in HTML.
+
+How do you create a progress bar in HTML5?
+
+What is the purpose of the HTML <meter> element?                                                                            12345678910
+
+Explain the significance of the aria-* attributes in HTML for accessibility.
+
+How do you create a responsive table in HTML?
+
+What is the purpose of the autocomplete attribute in an <input> element?
+
+How can you embed SVG (Scalable Vector Graphics) in an HTML document?
+
+What is the purpose of the tabindex attribute in HTML?
+
+How can you create a marquee effect (scrolling text) in HTML?
+
+Describe the use of the <datalist> element in HTML forms.
+
+What is the purpose of the HTML <dialog> element?
+
+How do you set a background image for a webpage using HTML and CSS?
+
+Explain the role of the <main> element in HTML5.
+
+How can you create an accordion-style dropdown in HTML and CSS?
+
+What is the purpose of the <samp> element in HTML?
+
+How do you embed a Google Map in an HTML document?
+
+What is the purpose of the rel attribute in the <link> tag?
+
+How can you create a responsive navigation menu in HTML and CSS?
+
+Explain the use of the <pre> tag in HTML.
+
+What is the purpose of the HTML <wbr> element?
+
+How can you create a sticky header in HTML and CSS?
+
+Describe the purpose of the <abbr> tag in HTML.
+
+How do you use the HTML5 <progress> element to show progress?
+
+How can you create a slideshow using HTML, CSS, and JavaScript?
+
+How can you create a responsive image gallery using HTML and CSS?
+
+Explain the role of the <cite> tag in HTML.
+
+How do you embed a YouTube video in an HTML document?
+
+What is the purpose of the required attribute in an HTML form?
+
+How can you create a custom checkbox or radio button using HTML and CSS?
+
+Explain the use of the contenteditable attribute in HTML.
+
+What is the purpose of the <details> and <summary> elements in HTML5?
+
+How can you create a 301 redirect in HTML?
+
+Describe the purpose of the crossorigin attribute in the <script> tag.
+
+How do you use the HTML5 <article> and <section> elements appropriately?
+
+Explain the differences between the <code>, <kbd>, and <samp> elements.
+
+How can you embed a Twitter feed on a webpage using HTML?
+
+What is the purpose of the list-style property in CSS?
+
+How can you create a responsive design without using media queries?
+
+Describe the purpose of the placeholder attribute in a <textarea> element.
+
+How do you create a gradient background in HTML and CSS?
+
+What is the role of the <small> tag in HTML?
+
+How can you include a line break within a paragraph using HTML?
+
+Explain the purpose of the <fieldset> and <legend> elements in HTML forms.
+
+How do you disable a form submit button until certain conditions are met using HTML and JavaScript?
+
+Describe the differences between the <strong> and <em> tags.
+
+What is the purpose of the role attribute in HTML accessibility?
+
+How do you create a responsive two-column layout in HTML and CSS?
+
+Explain the use of the hidden attribute in HTML.

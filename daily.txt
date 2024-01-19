@@ -1,0 +1,24 @@
+---------------------------------------45 days job challenge-------------------------------------------------------
+
+todays date is 17/1/2024  i am starting this challenge from this date 
+
+---------------------------------------------------------------------------------
+17/1/2024
+==============
+html  10q
+angular 20q
+angular class5
+javascript 10q
+
+==================
+18/1/2024
+
+ngif
+ngtemplate
+ngfor
+asyncpipe
+observable
+promise
+ngfor table bind 
+class 7
+======================

@@ -1,0 +1,74 @@
+===========================div==================================================
+
+The <div> tag in HTML stands for "division" and is a container element used to group other HTML elements together for styling purposes or to apply common behaviors using CSS or JavaScript.
+
+<div>
+    <p>This is a paragraph inside a div.</p>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+</div>
+
+
+=======================================What is semantic HTML?=======================================
+============================What is the purpose of the <a> tag?================================
+
+<a href="https://www.example.com">Visit Example.com</a>
+
+Linking to Other Documents:
+<a href="page2.html">Go to Page 2</a>
+
+
+Opening Links in a New Window or Tab:
+<a href="https://www.example.com" target="_blank">Visit Example.com in a new tab</a>
+
+====================================list==========================================
+<ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+
+------------------------
+
+<ol type="A" start="5">
+  <li>Item A</li>
+  <li>Item B</li>
+  <li>Item C</li>
+</ol>
+----------unoerder--------------
+<ul>
+  <li>Item A</li>
+  <li>Item B</li>
+  <li>Item C</li>
+</ul>
+
+------------------------
+------------------------
+
+=================================alt in image=============================================
+<img src="example.jpg" alt="Description of the image">
+
+=================================Block-level Elements:/ inline elements.=============================================
+Definition: Block-level elements create a "block" on the page. They typically start on a new line and stretch the full width of their container.
+
+<div>This is a block-level element.</div>
+<p>This is another block-level element.</p>
+
+
+Inline Elements:
+
+Definition: Inline elements do not start on a new line, and they only take up as much width as necessary.
+
+<span>This is an inline element.</span>
+<a href="#">This is another inline element (link).</a>
+
+===========================================doctype===================================
+The <!DOCTYPE html> declaration is used in HTML (Hypertext Markup Language) to specify the document type and version. It is placed at the very beginning of an HTML document, typically right before the <html> tag
+
+==============================================================================
+==============================================================================
+==============================================================================
+==============================================================================
+==============================================================================

@@ -1,0 +1,51 @@
+video 3
+
+==========
+ng new angular
+
+package.json
+-----------------------------------------------
+ @HostListener('click',["$event"])
+  onclick(){
+    alert("hello")
+  }
+
+-----------------------------------------------------
+
+components level class
+
+module level class
+
+----------------------------------------------
+
+JSON SERVER
+ek db.json file banao
+
+json-server --watch db.json  se server run karlo
+
+db.json file me ek seller array banao
+
+postman pe api check karlo
+
+---------------------------------------------
+
+seller signup api integration
+
+ng g s services/seller
+
+auth.ts par inject karlo service ko
+
+methods banao
+
+now post se url or data send karlo server par
+
+now data ko server par send karke dekho 
+
+agar data send ho jaye to application ko login karlo 
+or kisi page par navigate kar do
+
+jaise ki seller-home 
+
+uske liye router ka navigate(["seller-home"]) use karo
+
+

@@ -1,0 +1,281 @@
+<h1>parent compo</h1>
+
+
+<input type="text" #refVar placeholder="enter the value" >
+
+<button (click)="parentData(refVar.value)">send</button>
+<app-child [cdata]="pdata"></app-child>
+
+=================================parent to child ==by viewchild=================
+--------------------------child.component.ts:------------------------
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  template: '<p>{{ childData }}</p>',
+})
+export class ChildComponent {
+  childData: string;
+}
+
+
+----------------------------------parent.component.ts-------------------------------------
+
+import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { ChildComponent } from './child.component';
+
+@Component({
+  selector: 'app-parent',
+  template: `
+    <h2>Parent Component</h2>
+    <app-child></app-child>
+  `,
+  styleUrls: ['./parent.component.css']
+})
+export class ParentComponent implements AfterViewInit {
+  @ViewChild(ChildComponent) childComponent: ChildComponent;
+
+  ngAfterViewInit(): void {
+    // Access and set properties in the child component
+    this.childComponent.childData = 'Data from parent using ViewChild';
+  }
+}
+
+
+
+
+=====================================by service====================================
+
+--------------------child.component.ts:--------------------
+
+
+import { Component, OnInit } from '@angular/core';
+import { DataService } from './data.service';
+
+@Component({
+  selector: 'app-child',
+  template: '<p>{{ childData }}</p>',
+})
+export class ChildComponent implements OnInit {
+  childData: string;
+
+  constructor(private dataService: DataService) {}
+
+  ngOnInit() {
+    // Subscribe to changes in the data service
+    this.dataService.getData().subscribe(data => {
+      this.childData = data;
+    });
+  }
+}
+
+
+--------------------parent.component.ts:--------------------
+
+import { Component } from '@angular/core';
+import { DataService } from './data.service';
+
+@Component({
+  selector: 'app-parent',
+  template: `
+    <h2>Parent Component</h2>
+    <button (click)="updateData()">Update Data</button>
+  `,
+  styleUrls: ['./parent.component.css']
+})
+export class ParentComponent {
+  constructor(private dataService: DataService) {}
+
+  updateData() {
+    // Update data in the data service
+    this.dataService.setData('Data from parent');
+  }
+}
+
+----------------------------data.service.ts:---------------------------------------
+
+import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService {
+  private dataSubject = new BehaviorSubject<string>('');
+
+  setData(data: string): void {
+    this.dataSubject.next(data);
+  }
+
+  getData(): Observable<string> {
+    return this.dataSubject.asObservable();
+  }
+}
+Add Components to app.module.ts:
+
+=-----------------------------app.module.ts:-------------------------------------
+
+
+@NgModule({
+  declarations: [
+    ParentComponent,
+    ChildComponent
+  ],
+  imports: [BrowserModule],
+  providers: [DataService],
+  bootstrap: [ParentComponent],
+})
+export class AppModule { }
+
+
+==========================Observable=================================
+
+Observable ek design pattern hai jo asynchronous programming ko handle karne mein madad karta hai. Ye ek sequence hai jisme values ya events hoti hain, jo over time emit hoti rehti hain. Observable data ko represent karta hai, jo ki multiple values ya events ke series ke roop mein aata hai.
+
+================================================routing============================================
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: '**', component: NotFoundComponent }, // Redirect to a NotFoundComponent for unknown routes
+];
+
+-------------------------------------------Wildcart---------------------------------------------------------------
+Jab aap Angular mein { path: '**', component: AboutComponent } ka istemal karte hain, 
+to iska matlab hota hai ki agar koi URL route aapke define kiye gaye routes ke saath match nahi karta, 
+to Angular ise catch karega aur AboutComponent ko load karega. 
+Yani agar user kisi invalid URL par jaane ki koshish karta hai ya koi aisi route hoti hai jo aapne specifically define nahi ki hai, 
+to default taur par AboutComponent ko dikha diya jayega.
+
+Isko hum "wildcard route" bhi kehte hain. ** wildcard characters ka use kisi bhi path ke liye match karne ke liye hota hai. 
+Isse aap apne application ko robust banate hain, taki agar koi unexpected URL par jaata hai, to user ko kisi specific page par redirect kiya ja sake.
+
+ { path: '**', component: NotFoundComponent },
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+==============================================reactive form=======================================================================
+
+----------------------------------------------html------------------------------------------------------------
+
+<form [formGroup]="myform" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="enter name" formControlName="username">
+    <input type="text" placeholder="enter password" formControlName="password">
+
+    <button type="submit">Submit</button>
+
+</form>
+---------------------------------------------css-------------------------------------------------------------
+/* Add some basic styling to the form */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+----------------------------------------------ts------------------------------------------------------------
+export class AppComponent {
+  title = 'angular_basics';
+
+  myform:FormGroup
+
+
+
+  constructor(private fb: FormBuilder) {}
+
+  ngOnInit() {
+    this.myform = this.fb.group({
+      username:[''],
+      password:['']
+    })
+   
+  }
+
+  onSubmit(){
+    console.log("submitted");
+    
+
+  }
+----------------------------------------------module------------------------------------------------------------
+
+ declarations: [
+    AppComponent,
+    UsersComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule
+    
+  ],
+
+
+===============================================Lazy Loading========================================================
+
+lazy loading Angular mein tab kaam aata hai jab tu module ko dynamically load karna chahta hai, jab woh zaroori ho, na ki initial page load mein. 
+Yeh performance improve karta hai, khaaskar jab bade applications ko handle karna ho.
+
+1. Module create karo:
+Sabse pehle, alag module create karo jise tu lazy load karna chahta hai. Is module mein woh components, services, ya aur kuch bhi include karo jo tu dynamically load karna chahta hai.
+
+2. Routing mein configuration karo:
+
+// Example routing configuration
+const routes: Routes = [
+  { path: 'lazy', loadChildren: () => import('./lazy/lazy.module').then(m => m.LazyModule) },
+  // Other routes...
+];
+
+
+3. Main AppModule mein changes karo:
+Apne AppModule mein, lazy loading ke liye RouterModule.forRoot() ke bajaye RouterModule.forChild() ka use karo.
+
+// Example AppModule
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  // Other imports...
+})
+export class AppRoutingModule { }
+
+
+==============================================How can you handle errors in Angular applications?==========================================
+
+Yeh approach synchronous errors ke liye suitable hai.
+
+try {
+  // Code where error might occur
+} catch (error) {
+  // Handle the error
+}
+
+--------------------------------------------------

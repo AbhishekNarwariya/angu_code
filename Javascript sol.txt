@@ -80,16 +80,153 @@ Note: Null ek specific value hai, jo developer dwara assign ki ja sakti hai, jab
 ===============================================Explain the concept of hoisting.=============================================================================================
 
 
-============================================================================================================================================
+========================================================event looop====================================================================================
+Event loop JavaScript mein ek mahatvapurna concept hai, vishesh roop se asynchronous programming ke context mein
+
+Call Stack:
+
+JavaScript ek call stack ka istemal function execution ko track karne ke liye karta hai. Jab koi function call hoti hai, vo call stack ke top par add ho jati hai.
+
+Callback Queue:
+
+Asynchronous operations, jaise ki data fetch karna, ek callback queue mein callbacks ko store karte hain.
+
+Event Loop:
+
+Event loop ek loop hai jo continuously chalta rehta hai. Ye check karta hai ki call stack khali hai ya nahi. Agar call stack khali hai, to vo next callback ko call stack mein lekar execute karta hai.
+
+Non-Blocking:
+
+JavaScript mein asynchronous operations non-blocking hote hain. Jab ek asynchronous task complete hota hai, uska corresponding callback event loop se call stack mein move hota hai.
+
+
+Ek din, ek JavaScript program shuru hua. Is program ke andar kuch functions the, aur jab program chalta tha, ye functions call hote the. Har ek function call ek chhota sa piece code hota tha, jo ki call stack ke top par add hota tha.
+
+Ab, imagine karein ki ek function call hui, jaise ki getUserData(). Ye function network se data fetch karne ka kaam karta hai, aur data aane mein thoda sa time lagta hai. Lekin, JavaScript single-threaded hai, isliye woh nahi rukta.
+
+Jab getUserData() function call hua, ye call stack ke top par chala gaya. Lekin, data fetch hone mein time lagega, isliye JavaScript ne socha, "Chalo, main isko background mein kar leta hoon."
+
+Yahan aata hai Callback Queue ka role. Jab data fetch ho jata hai, ek callback function, kehte hain use userDataCallback, Callback Queue mein chala jata hai.
+
+Ab, yeh event loop entry le leta hai. Event loop continuously call stack aur callback queue ko dekhta rehta hai. Ek samay aata hai jab call stack khali hota hai.
+
+Event loop sochta hai, "Arey, call stack khali hai. Koi baat nahi, chalo userDataCallback ko lete hain aur call stack mein dalte hain."
+
+userDataCallback ab call stack mein hai aur execute ho raha hai. Isme aap data ke saath kuch actions kar sakte hain, jaise ki UI ko update karna.
+
+Is kahani mein sabse important point yeh hai ki JavaScript kabhi bhi wait nahi karta. Jab bhi koi asynchronous task complete hota hai, uska corresponding callback event loop se call stack mein move ho jata hai, aur kaam chalta rahta hai.
+
+Is tarah se, JavaScript ka event loop ek smart organizer ki tarah kaam karta hai, jo tasks ko efficient tarike se manage karta hai aur program ko smoothly run karne mein madad karta hai.
+
+
+
+==================================What is the DOM (Document Object Model) in JavaScript?=========================================================================================
+
+DOM (Document Object Model) ek aisa concept hai jo JavaScript mein use hota hai taki hum web pages ko manipulate kar sakein. Jab aap koi web page open karte hain, woh ek document hota hai, aur DOM us document ko represent karta hai, jise hum phir JavaScript ke through access karke modify kar sakte hain.
+
+
+
+=====================================What are arrow functions in JavaScript and how do they differ from regular functions?============================================================
+
+. Syntax:
+
+Arrow functions ki syntax short hoti hai. Traditional function mein aise hota hai:
+
+-------------------------
+const add = function(a, b) {
+  return a + b;
+};
+--------------------------
+Arrow function mein:
+
+const add = (a, b) => a + b;
+
+-----------------------------------------------------------------------
+
+
+=====================================================callback function=======================================================================================
+Callback functions in JavaScript refer to functions that are passed as arguments to other functions and are executed later, often after the completion of an asynchronous operation or in response to an event
+============================================What are the different ways to create objects in JavaScript?====================================================================================
+
+Object Literal:
+
+Sabse simple tareeka hai object ko direct define karna. Jaise ki:
+
+var car = { make: "Toyota", model: "Corolla", year: 2022 };
+
+-------------------------------------------------------------------------
+
+
+========================================================FILTER====================================================================================
+
+var numbers = [5, 12, 8, 20, 6];
+
+var filteredNumbers = numbers.filter(function(number) {
+  return number > 10;
+});
+
+console.log(filteredNumbers);
+// Output: [12, 20]
+
+=================================================SPREAD===========================================================================================
+Spread operator (...) ek bahut hi useful feature hai JavaScript mein. Yeh mainly arrays aur objects ke liye kaam karta hai.
+
+1. Object Properties ko Copy karna:
+const obj1 = { name: 'John', age: 25 };
+const obj2 = { ...obj1 }; // Spread operator se obj1 ke properties ko copy kiya gaya
+
+console.log(obj2);
+// Output: { name: 'John', age: 25 }
+
+------------------------------------------------------
+
+
+
+=====================================================. Rest Parameter=======================================================================================
+Spread operator ko function arguments mein use karke hum rest parameter bana sakte hain
+
+function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4, 5));
+// Output: 15
+
+===============================================================async/await=============================================================================
+
+Async aur await JavaScript mein asynchronous programming ko handle karne ke liye use hote hain. Jab aap kisi function ko "async" keyword ke saath define karte hain, toh woh function ek Promise return karta hai.
+
+Jab aap "await" keyword ka use karte hain ek function ke saath, toh JavaScript runtime uss function ka execution rok deta hai aur dusre kaam mein involve ho jaata hai jab tak ki woh function complete nahi hota ya reject nahi hota.
+
+Yeh tareeka aapko allow karta hai ki aap asynchronous code likhein jo ki synchronous code jaise dikhe lekin asynchronous behavior dikhaye. Isse aap complex tasks ko asaan taur par manage kar sakte hain bina callback hell ya nested callbacks ke.
+
+
+async function example() {
+  console.log('Start');
+
+  // Asynchronous task
+  const result = await someAsyncFunction();
+
+  console.log(result);
+
+  console.log('End');
+}
+
+// Function that returns a Promise
+function someAsyncFunction() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Async operation complete');
+    }, 2000);
+  });
+}
+
+example();
 
 ============================================================================================================================================
-
 ============================================================================================================================================
-
 ============================================================================================================================================
-
 ============================================================================================================================================
-
 ============================================================================================================================================
-
+============================================================================================================================================
 ============================================================================================================================================
